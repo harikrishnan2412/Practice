@@ -1,24 +1,17 @@
-public class Student {
-    String name;
-    int age;
+import java.util.*;
 
-    public void printInfo(String name) {
-        System.out.println(this.name);
+class SUM{
+    public static void main(String args[])
+    {
+        System.out.println("enter the number of terms");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum=0;
+        int i;
+        for(i=0;i<n;i++){
+           sum=sum+i;
+        }
+        System.out.print("Sum of numbers upto" + n+" is "+sum);
     }
-
-     public void printInfo(int age) {
-        System.out.println(this.age);
-    }
+    
 }
-
-
-public class OOPS {
-    public static void main(String[] args) {
-        Student s1 = new Student();
-        s1.name=hari;
-        s1.age=20;
-
-        s1.printInfo(s1.name);
-    }
-}
-
