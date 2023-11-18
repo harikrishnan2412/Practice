@@ -1,37 +1,24 @@
-class Pen {
-    String colour;
-    String type;
-
-    public void write(){
-        System.out.println("this pen writes!!");
-    }
-    public void printColour(){
-        System.out.println(this.colour);
-    }
-    public void printType(){
-        System.out.println(this.type);
-    }
-}
-
-class Student{
-    int age;
+public class Student {
     String name;
+    int age;
 
-    public void info(){
-        System.out.println("Name : "+ this.name);
-        System.out.println("Age : "+ this.age);
+    public void printInfo(String name) {
+        System.out.println(this.name);
     }
-    Student(String name,int age){
-        this.name=name;
-        this.age=age;
+
+     public void printInfo(int age) {
+        System.out.println(this.age);
     }
 }
+
 
 public class OOPS {
     public static void main(String[] args) {
-        Student s1 = new Student("hari", 20);
+        Student s1 = new Student();
+        s1.name=hari;
+        s1.age=20;
 
-        s1.info();
+        s1.printInfo(s1.name);
     }
-    
 }
+
